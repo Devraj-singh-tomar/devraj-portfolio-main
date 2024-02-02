@@ -24,19 +24,22 @@
     display: flex;
 }
 .contactform form div input{
-    width: 20vw;
+    /* width: 20vw; */
     border-radius: 5px;
     margin: 6px 0 0 0;
     padding:3px;
 }
+.contactform form {
+    margin:0 70px;
+}
 
-form{
+/* form{
     border: 1.6px solid black;
     border-radius: 15px;
     padding: 12px 13px;
     width: 22vw;
     margin: 0 1vw;
-}
+} */
 
 
 #emailHelp{
@@ -60,4 +63,40 @@ form{
     color: #ffffff;
     background-color: black;
 }
+
+@media (max-width:1090px){
+    /* .contactform{
+        margin: 12px 8px;
+    
+    } */
+}
+
+@media (max-width:710px){
+    .contactform h1{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:500px){
+    .contactform{
+        padding-top: 0;
+
+    }
+
+    .contactform form{
+        margin:0 -27px;
+    }
+
+    .contactform h1{
+        font-size: 1.3rem;
+        margin: 0px -26px;
+    }
+
+    .btn{
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: 0px 2px;
+    }
+}
+
 

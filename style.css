@@ -70,7 +70,7 @@ body{
 
 }
 
-.about {
+#element {
     font-family: 'Fira Sans', sans-serif;
     font-size: 45px;
 }
@@ -127,12 +127,18 @@ body{
         transform: translate(-438px, 0px);
         position: absolute;
     } */
+
     .devpic{
         display: none;
     }
+
     .main{
         width: 100vw;
     height: 100vh;
+    }
+
+    .contactform{
+        margin: 8px;
     }
 
 }

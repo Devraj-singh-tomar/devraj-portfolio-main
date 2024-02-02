@@ -32,7 +32,9 @@
                 <div class="devinfo">
                     <div class="hello">Hello I am</div>
                     <div class="name">Devraj Singh Tomar</div>
-                    <div class="about">Full-Stack Developer</div>
+                    <span id="element"></span>
+                    <!-- <div class="about">Full-Stack Developer</div> -->
+
                     <div class="buttons">
                         <a href="/cv.txt" target="_blank"><button>Download Resume</button></a>
                         <a href="/cv.txt" target="_blank"> <button>Github</button></a>
@@ -45,6 +47,14 @@
             </div>
 
         </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element',{
+            strings:['Full-Stack Developer.'],typeSpeed:52,
+        });
+    </script>
 
         <script src="script.js"></script>
 </body>
