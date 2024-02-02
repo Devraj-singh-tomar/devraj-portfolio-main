@@ -5,32 +5,34 @@
     height: 100vh;
 } */
 
-.contactform{
+.contactform {
     font-family: 'Fira Sans', sans-serif;
     padding: 0 34px;
     padding-top: 41px;
-    margin: 0 80px ;
+    margin: 0 80px;
 }
 
-.contactform h1{
+.contactform h1 {
     font-family: "Source Code Pro", monospace;
     /* text-align: center; */
     padding: 43px 0;
 }
 
-.contactform form div{
+.contactform form div {
     padding: 10px 0;
     flex-direction: column;
     display: flex;
 }
-.contactform form div input{
+
+.contactform form div input {
     /* width: 20vw; */
     border-radius: 5px;
     margin: 6px 0 0 0;
-    padding:3px;
+    padding: 3px;
 }
+
 .contactform form {
-    margin:0 70px;
+    margin: 0 70px;
 }
 
 /* form{
@@ -42,61 +44,84 @@
 } */
 
 
-#emailHelp{
-    font-size: 10px;
-    color: whitesmoke;
+#emailHelp {
+    font-size: 0.625rem;
+    color: black;
     margin: -12px 0 0 15px;
 }
 
-.btn{
+.btn {
     padding: 6px 13px;
     border-radius: 22px;
     border: 0;
     cursor: pointer;
     background-color: #A0E9FF;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 3px 1px;
 }
 
-.btn:hover{
+.btn:hover {
     color: #ffffff;
     background-color: black;
 }
 
-@media (max-width:1090px){
+
+
+@media (max-width:1090px) {
     /* .contactform{
         margin: 12px 8px;
     
     } */
 }
 
-@media (max-width:710px){
-    .contactform h1{
+@media (max-width:710px) {
+    .contactform h1 {
         font-size: 1.7rem;
     }
 }
 
-@media (max-width:500px){
-    .contactform{
+@media (max-width:580px) {
+    .contactform form {
+        font-size: 0.939rem;
+        margin: 0 10px;
+    }
+
+    .contactform h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:500px) {
+    .contactform {
         padding-top: 0;
 
     }
 
-    .contactform form{
-        margin:0 -27px;
+    .contactform form {
+        margin: 0 -27px;
     }
 
-    .contactform h1{
+    .contactform h1 {
         font-size: 1.3rem;
         margin: 0px -26px;
     }
 
-    .btn{
-    padding: 5px 8px;
-    font-size: 12px;
-    margin: 0px 2px;
+    .btn {
+        padding: 5px 8px;
+        font-size: 12px;
+        margin: 0px 2px;
+    }
+
+    @media (max-width: 310px) {
+        .contactform form {
+            margin: 0 -70px;
+        }
+
+        .contactform h1 {
+            font-size: 1rem;
+            margin: 14px 0px -15px -76px;
+            padding: 54px 0px 35px 0px;
+        }
     }
 }
-
-
