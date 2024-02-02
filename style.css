@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #00A9FF;
 }
 
@@ -15,7 +16,9 @@ body{
 }
 
 .sidebar {
-    position: absolute;
+    z-index: 1;
+    /* position: absolute; */
+    position: fixed;
     background-color: #A0E9FF;
     /* width: 432px; */
     font-family: 'Fira Sans', sans-serif;
@@ -53,6 +56,7 @@ body{
 }
 
 .devinfo {
+    font-size: 18px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -60,11 +64,11 @@ body{
 
 .hello {
     font-family: "Source Code Pro", monospace;
-    font-size: 65px;
+    font-size: 3em;
 }
 
 .name {
-    font-size: 55px;
+    font-size: 3.2em;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 
@@ -72,11 +76,12 @@ body{
 
 #element {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 45px;
+    font-size: 2.6em;
 }
 
 .buttons {
     margin-top: 34px;
+    font-size: 8.7px;
 }
 
 .buttons button {
@@ -86,7 +91,7 @@ body{
     cursor: pointer;
     background-color: #A0E9FF;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 2em;
     margin: 0 3px;
 }
 
@@ -99,46 +104,104 @@ body{
     height: 52vh;
 }
 
-.sidebargo{
+.sidebargo {
     transform: translate(-438px, 0px);
     position: absolute;
 }
 
-.hamburger{
+.hamburger {
+    z-index: 1;
     cursor: pointer;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.ham{
+.ham {
+    position: fixed;
     margin-top: 1px;
     margin-left: 2px;
 }
 
-.cross{
+.cross {
+    position: fixed;
     margin-top: 1px;
     margin-left: 134px;
 }
 
 
-@media (max-width:1090px){
+@media (max-width:1090px) {
     /* .sidebar{
         transform: translate(-438px, 0px);
         position: absolute;
     } */
 
-    .devpic{
+    .devpic {
         display: none;
     }
 
-    .main{
+    .main {
         width: 100vw;
-    height: 100vh;
+        height: 100vh;
     }
 
-    .contactform{
+    .contactform {
         margin: 8px;
     }
 
+    .buttons {
+        font-size: 8.4px;
+    }
+
+}
+
+@media (max-width:633px) {
+    .devinfo {
+        font-size: 15px;
+    }
+
+    .buttons {
+        font-size: 7.7px;
+    }
+}
+
+@media (max-width:462px) {
+    .devinfo {
+        font-size: 12.97px;
+    }
+
+    .buttons {
+        font-size: 7.2px;
+    }
+}
+
+@media (max-width:398px) {
+    .devinfo {
+        font-size: 10px;
+    }
+
+    .buttons {
+        font-size: 6.3px;
+    }
+
+    .buttons button {
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width:293px) {
+    .buttons button {
+        margin: 1.9px 6px;
+    }
+}
+
+@media (max-width:230px) {
+    .devinfo {
+        font-size: 8px;
+    }
+
+    .buttons {
+        font-size: 4.7px;
+        margin: 9px 0px 20px -4px;
+    }
 }

@@ -1,11 +1,21 @@
-.aboutcontainer {
-    /* background-color: red; */
+/* .aboutcontainer {
+    background-color: red;
     height: 41vh;
     width: 80vw;
     margin: 12vw 5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+} */
+
+.aboutcontainer {
+    /* background-color: red; */
+    height: 41vh;
+    width: 80vw;
+    margin: 0vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* .aboutinfo{
