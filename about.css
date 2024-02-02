@@ -1,0 +1,55 @@
+.aboutcontainer {
+    /* background-color: red; */
+    height: 41vh;
+    width: 80vw;
+    margin: 12vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .aboutinfo{
+    margin: 0 50px;
+} */
+
+.aboutinfo h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 30px 23px;
+}
+
+.aboutitem {
+    text-wrap: wrap;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 9px 24px;
+    /* padding: 12px 0; */
+}
+
+.aboutitem p {
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 6px 13px;
+    border-radius: 22px;
+    border: 0;
+    cursor: pointer;
+    background-color: #A0E9FF;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 3px 1px;
+}
+
+.btn:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+/* .devpicabout img {
+    margin: 25px 20px 0px 73px;
+    height: 19vh;
+    float: right;
+    right: 0.1vw;
+    top: -0.2vw;
+    position: fixed;
+} */
